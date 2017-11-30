@@ -1,0 +1,14 @@
+{
+  "name": "postman-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "newman run postman-test.postman_collection.json",
+    "start": "ruby app.rb"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^3.8.3"
+  }
+}

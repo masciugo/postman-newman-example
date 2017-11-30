@@ -1,0 +1,43 @@
+{
+	"info": {
+		"name": "postman-test",
+		"_postman_id": "5c7bf68e-8e50-0fc1-91a4-304f199bcfb0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "root",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body is correct\", function () {",
+							"    pm.response.to.have.body(\"Hello world!\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:4567",
+					"host": [
+						"localhost"
+					],
+					"port": "4567"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
